@@ -28,7 +28,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'api',
-    "rosetta"
+    'rosetta',
+    'tastypie'
 ]
 
 MIDDLEWARE = [
@@ -70,9 +71,9 @@ WSGI_APPLICATION = 'base.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "lratvakan_db",
-        'USER': "root",
-        'PASSWORD': "mysqlroot",
+        'NAME': "news_db",
+        'USER': "mysql",
+        'PASSWORD': "mysql",
         'HOST': "localhost",
         'PORT': "3306",
     }

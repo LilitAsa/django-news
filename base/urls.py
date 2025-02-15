@@ -9,7 +9,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("i18n/", include("django.conf.urls.i18n")),
     path("set-language/", set_language, name="set_language"),
-    # path('api/', include('api.urls')),
+    path('api/', include('api.urls')),
 ]
 
 urlpatterns += i18n_patterns(
